@@ -11,9 +11,16 @@ def caesar_cipher(string, shift_factor)
 
   string_array = string.split("")
 
-  puts string_array
+  ciper_array = string_array.map do |char|
+    #if char =~ /[A-Za-z]/
+    #  char
+    #end
+    char.ord
+  end
+
+  puts ciper_array
 end
 
 
 
-caesar_cipher("Test", 2)
+caesar_cipher("Test!", 2)
